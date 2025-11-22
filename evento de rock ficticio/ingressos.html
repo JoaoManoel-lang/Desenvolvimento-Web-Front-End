@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingressos - Rock BSB Roll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎟️ Escolha seu ingresso</h1>
+
+  <form id="form-ingresso">
+    <label for="banda">Banda:</label>
+    <select id="banda" required>
+      <option value="">Selecione</option>
+      <option value="Iron Maiden">Iron Maiden</option>
+      <option value="Pearl Jam">Pearl Jam</option>
+      <option value="Creed">Creed</option>
+    </select>
+
+    <label for="horario">Horário:</label>
+    <select id="horario" required>
+      <option value="">Selecione</option>
+      <option value="16:00">16:00</option>
+      <option value="18:00">18:00</option>
+      <option value="20:30">20:30</option>
+    </select>
+
+    <label for="valor">Valor:</label>
+    <select id="valor" required>
+      <option value="">Selecione</option>
+      <option value="100">R$100 - Pista</option>
+      <option value="180">R$180 - VIP</option>
+    </select>
+
+    <button type="submit">Adicionar ao Carrinho</button>
+  </form>
+
+ 
+
+  <div id="carrinho" style="display: none;">
+    <h2>🛒 Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <button onclick="irParaFinalizar()">Finalizar Compra</button>
+  </div>
+
+  <script src="carrinho.js"></script>
+</body>
+</html>

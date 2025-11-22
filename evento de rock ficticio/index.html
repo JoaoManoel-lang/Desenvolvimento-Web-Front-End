@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock BSB Roll - Os Deuses do Rock ouviram nosso pedido</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>ROCK BSB ROLL</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#agenda">Lineup & Horários</a></li>
+          <li><a href="#bandas">Bandas</a></li>
+          <li><a href="#inscricao">Feedback</a></li>
+          <li><a href="ingressos.html" target="_blank">Comprar Ingressos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="sobre" class="section-padding">
+      <div class="container">
+        <h2>Os Deuses do Rock ouviram nosso pedido</h2>
+        <p>O Rock BSB Roll vem para incendiar a Esplanada dos Ministérios! Prepare-se para uma noite épica onde o peso do Heavy Metal encontra a força visceral do Grunge e do Post-Grunge. Este não é apenas um show, é a celebração do melhor do rock mundial em Brasília.</p>
+        <p>Com um lineup matador, o festival é o seu destino obrigatório para sentir a energia dos grandes hinos que marcaram gerações. Traga sua camisa preta, aqueça a garganta e venha fazer parte da história.</p>
+
+        <div class="info-evento">
+          <p><strong>Data:</strong> Sexta-Feira, 13 de Março de 2026</p>
+          <p><strong>Horário:</strong> 15:00h (Abertura dos Portões)</p>
+          <p><strong>Local:</strong> Esplanada dos Ministérios, Brasília - DF</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="agenda" class="section-padding background-chumbo">
+      <div class="container">
+        <h2>Lineup & Horários</h2>
+
+        <ul class="lista-agenda">
+          <li class="atividade workshop">
+            <span class="horario-agenda">16:00 - 17:30</span>
+            <div class="detalhe-agenda">
+              <h4>Show de Abertura: Creed</h4>
+              <p>O som poderoso do Post-Grunge para começar o festival. Prepare-se para "My Sacrifice".</p>
+            </div>
+          </li>
+          <li class="atividade palestra">
+            <span class="horario-agenda">18:00 - 19:45</span>
+            <div class="detalhe-agenda">
+              <h4>A Força do Grunge: Pearl Jam</h4>
+              <p>A banda de Seattle sobe ao palco para um set inesquecível com seus maiores clássicos.</p>
+            </div>
+          </li>
+          <li class="atividade headline">
+            <span class="horario-agenda">20:30 - 22:30</span>
+            <div class="detalhe-agenda">
+              <h4>Headline: Iron Maiden</h4>
+              <p>A Dama de Ferro encerra a noite com o melhor do Heavy Metal mundial! Up The Irons!</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="bandas" class="section-padding">
+      <div class="container">
+        <h2>Bandas Confirmadas</h2>
+
+        <div class="grid-palestrantes">
+          <div class="card-palestrante">
+            <img src="iron-maiden-logo-png-transparent.png" alt="Logo Iron Maiden">
+            <h3>IRON MAIDEN</h3>
+            <p class="titulo-palestrante">Heavy Metal / Reino Unido</p>
+            <p class="bio">Uma das maiores bandas de metal de todos os tempos. Conhecida pela mascote "Eddie" e shows grandiosos e teatrais.</p>
+          </div>
+          <div class="card-palestrante">
+            <img src="Pearl-Jam-emblem.jpg" alt="Logo Pearl Jam">
+            <h3>PEARL JAM</h3>
+            <p class="titulo-palestrante">Grunge / Estados Unidos</p>
+            <p class="bio">Líderes do movimento Grunge de Seattle, com letras introspectivas e performances cheias de paixão e energia.</p>
+          </div>
+          <div class="card-palestrante">
+            <img src="creed.jpg" alt="Logo Creed">
+            <h3>CREED</h3>
+            <p class="titulo-palestrante">Post-Grunge / Estados Unidos</p>
+            <p class="bio">Uma das bandas mais vendidas do início dos anos 2000, conhecidos por baladas poderosas e riffs épicos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="inscricao" class="section-padding background-chumbo">
+  <div class="container">
+    <h2>Nos de sua Opinião</h2>
+    <div id="form-inscricao">
+      <p class="aviso-ingresso">Preencha o formulário de FEEDBACK!</p>
+      <form id="form-opiniao"> <!-- ID adicionado aqui -->
+        <div class="form-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" required autocomplete="tel">
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Quais suas sugestões</label>
+          <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">ENVIAR!</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById("form-opiniao").addEventListener("submit", function(e) {
+    e.preventDefault();
+    window.location.href = "agradecimento.html";
+  });
+</script>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="contato-info">
+        <h3>Rock BSB Roll</h3>
+        <p>contato@rockbsbroll.com.br</p>
+        <p>Local: Esplanada, Brasília - DF</p>
+      </div>
+      <div class="redes-sociais">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

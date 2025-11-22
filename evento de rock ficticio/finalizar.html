@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Finalizar Compra - Rock BSB Roll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🤘 Finalize sua compra</h1>
+
+  <form id="form-pagamento">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" required>
+
+    <label for="pagamento">Forma de pagamento:</label>
+    <select id="pagamento" required>
+      <option value="">Selecione</option>
+      <option value="pix">PIX</option>
+      <option value="cartao">Cartão de Crédito</option>
+      <option value="boleto">Boleto Bancário</option>
+    </select>
+
+    <button type="submit">Confirmar Compra</button>
+  </form>
+
+  <div id="mensagem-obg" style="display:none;">
+    <h2>🎉 Obrigado pela compra!</h2>
+    <p>Você garantiu seu ingresso para o Rock BSB Roll!</p>
+  </div>
+
+  <script>
+    document.getElementById("form-pagamento").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("form-pagamento").style.display = "none";
+      document.getElementById("mensagem-obg").style.display = "block";
+    });
+  </script>
+</body>
+</html>
